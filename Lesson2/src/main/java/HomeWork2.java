@@ -1,8 +1,10 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
        /* 1. Натуральное положительное число записано в переменную n. Создайте программу, которая будет генерировать и
        выводить на экран целое псевдослучайное число из отрезка [-n; n].*/
@@ -47,6 +49,8 @@ public class HomeWork2 {
         System.out.println("-----");
 
         //5. Создать программу, выводящую на экран случайно сгенерированное трёхзначное число и его наибольшую цифру
+        int c = random.nextInt(900)+100;
+
 
 
         /* 6. В три переменные a, b и c явно записаны программистом три целых неравных между собой числа. Создать программу,
