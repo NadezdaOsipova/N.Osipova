@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -49,25 +50,63 @@ public class HomeWork2 {
         System.out.println("-----");
 
         //5. Создать программу, выводящую на экран случайно сгенерированное трёхзначное число и его наибольшую цифру
-        int c = random.nextInt(900)+100;
-
+        int c = random.nextInt(900) + 100;
+        System.out.println(c);
+        int first = c / 100;
+        int transitional = c % 100;
+        int second = transitional / 10;
+        int third = transitional % 10;
+        if ((first > second) && (first > third)) {
+            System.out.println(first + " найбольшее из 3 чисел");
+        } else if ((second > third) && (second > first)) {
+            System.out.println(second + " найбольшее из 3 чисел");
+        } else {
+            System.out.println(third + " найбольшее из 3 чисел");
+        }
+        System.out.println("------");
 
 
         /* 6. В три переменные a, b и c явно записаны программистом три целых неравных между собой числа. Создать программу,
          которая переставит числа таким образом, чтобы при выводе на экран последовательности a, b и c оказалось строго возрастающей.*/
+        int one = 25;
+        int two = 7;
+        int three = 135;
+        int[] array = new int[]{one, two, three};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        System.out.println("------");
 
         /*7. Создать программу, которая будет вычислять и выводить на экран сумму двух целых чисел, введенных пользователем
         с клавиатуры. Если пользователь некорректно введёт хотя бы одно из чисел, то сообщать об ошибке.*/
+        System.out.println("Введите первое число:");
+        int s1 = 0;
+        if (scanner.hasNextInt()) {
+            s1 = scanner.nextInt();
+        } else {
+            System.out.println(s1 + "число введено некорректно");
+        }
+        System.out.println("Введите второе число:");
+        int s2 = 0;
+        if (scanner.hasNextInt()) {
+            s2 = scanner.nextInt();
+        } else {
+            System.out.println(s2 + "число введено некорректно");
+        }
+        System.out.println("Сумма введенных чисел:" + s1 + s2);
+        System.out.println("------");
 
 
         //8. Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128…
+        int r = 0;
 
 
         //9. Выведите на экран все положительные делители натурального числа, введённого пользователем с клавиатуры.
-
+        System.out.println("Введите любое целое число:");
+        int x1 = scanner.nextInt();
 
       /* 10. Для введенного пользователя с клавиатуры натурального числа посчитайте сумму всех его цифр (заранее не известно
          сколько цифр будет введено пользователем).*/
-
+        System.out.println("Введите любое целое число:");
+        int x3 = scanner.nextInt();
     }
 }
