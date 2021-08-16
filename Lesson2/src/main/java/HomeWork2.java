@@ -7,7 +7,7 @@ public class HomeWork2 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-       /* 1. Натуральное положительное число записано в переменную n. Создайте программу, которая будет генерировать и
+     /* 1. Натуральное положительное число записано в переменную n. Создайте программу, которая будет генерировать и
        выводить на экран целое псевдослучайное число из отрезка [-n; n].*/
         int a = (int) (Math.random() * (40 + 1)) - 20;
         System.out.println(a);
@@ -92,21 +92,45 @@ public class HomeWork2 {
         } else {
             System.out.println(s2 + "число введено некорректно");
         }
-        System.out.println("Сумма введенных чисел:" + s1 + s2);
+        int summ = s1 + s2;
+        System.out.println("Сумма введенных чисел:" + summ);
         System.out.println("------");
 
 
         //8. Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128…
-        int r = 0;
+        int j = 1;
+        for (int i = 0; i < 20; i++) {
+            j = j * 2;
+            System.out.print(j + " ");
+        }
+        System.out.println();
+        System.out.println("------");
 
 
         //9. Выведите на экран все положительные делители натурального числа, введённого пользователем с клавиатуры.
         System.out.println("Введите любое целое число:");
         int x1 = scanner.nextInt();
+        int count = 0;
+        for (int i = 1; i < x1; i++) {
+            if (x1 % i == 0) {
+                count++;
+                System.out.println(i + " ");
+            }
+        }
+        System.out.println("Делители введенного числа" + count);
+        System.out.println("------");
+
 
       /* 10. Для введенного пользователя с клавиатуры натурального числа посчитайте сумму всех его цифр (заранее не известно
          сколько цифр будет введено пользователем).*/
         System.out.println("Введите любое целое число:");
         int x3 = scanner.nextInt();
+        int a3 = 0;
+        while (!(x3 == 0)) {
+            a3 = a3 + x3 % 10;
+            a3 = a3/10;
+        }
+        System.out.println("Сумма всех чисел введенного числа равна " + a3);
     }
 }
+
