@@ -1,6 +1,8 @@
+package lesson;
+
 public class Main {
     public static void main(String[] args) {
-       /* Calculator calculator = new Calculator();
+       /* lesson.Calculator calculator = new lesson.Calculator();
         System.out.println(calculator.summ(2,3));
         calculator.summa(4,5);*/
 

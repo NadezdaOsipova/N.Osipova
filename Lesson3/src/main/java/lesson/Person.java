@@ -1,3 +1,5 @@
+package lesson;
+
 import lombok.Getter;
 import lombok.Setter;
 
