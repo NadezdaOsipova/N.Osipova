@@ -1,5 +1,6 @@
 package homeWork;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -34,7 +35,13 @@ public class Main {
         System.out.println(massive.getSumOfElements(myArray));
         System.out.println("_____");
 
-        System.out.println(massive.multiplyBy3(myArray));
+        System.out.println(Arrays.toString(massive.multiplyBy3(myArray)));
+        System.out.println("_____");
+
+    massive.printMassiveAsLine1(myArray);
+        System.out.println();
+    massive.printReverseMassiveAsLine1(myArray);
+        System.out.println();
         System.out.println("_____");
     }
 }

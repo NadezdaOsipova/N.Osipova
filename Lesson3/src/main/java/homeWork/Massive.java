@@ -27,7 +27,7 @@ public class Massive {
     }
 
     //который принимает массив, умножает каждый элемент массива на 3 и возвращает умноженный массив;
-    int multiplyBy3(int[] array) {
+    int[] multiplyBy3(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
             array[i] = array[i] * 3;
@@ -35,5 +35,16 @@ public class Massive {
         return array;
     }
 
+    void printMassiveAsLine1(int[] multiplyBy3) {
+        for (int arr : multiplyBy3) {
+            System.out.print(arr + " ");
+        }
+    }
+
+    void printReverseMassiveAsLine1(int[] multiplyBy3) {
+        for (int i = multiplyBy3.length - 1; i >= 0; i--) {
+            System.out.print((multiplyBy3[i]) + " ");
+        }
+    }
 
 }
