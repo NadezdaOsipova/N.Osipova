@@ -38,7 +38,7 @@ public class Person {
     }
 
     void printName() {
-        System.out.println(name + " "+ surname);
+        System.out.println(name + " " + surname);
     }
 
     boolean isAdult() {

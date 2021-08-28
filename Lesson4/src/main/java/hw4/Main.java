@@ -1,4 +1,5 @@
 package hw4;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -6,15 +7,17 @@ import lombok.Setter;
 @Setter
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("Иван","Иванов",18,1234567);
-        Person person1 = new Person("Федор","Федоров",12,1234567);
+        Person person = new Person("Иван", "Иванов", 18, 1234567);
+        Person person1 = new Person("Федор", "Федоров", 12, 1234567);
 
         person.printAllInformation();
         person.printName();
-        person.isAdult();
+        System.out.println(person.isAdult());
+
+        System.out.println();
 
         person1.printAllInformation();
         person1.printName();
-        person1.isAdult();
+        System.out.println(person1.isAdult());
     }
 }
