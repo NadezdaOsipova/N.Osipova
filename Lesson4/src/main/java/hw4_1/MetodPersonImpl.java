@@ -1,6 +1,5 @@
-package hw4;
+package hw4_1;
 
-import hw4.MetodPerson;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

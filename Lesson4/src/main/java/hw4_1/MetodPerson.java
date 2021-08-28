@@ -1,4 +1,4 @@
-package hw4;
+package hw4_1;
 
 public interface MetodPerson {
     void printAllInformation();
