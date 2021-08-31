@@ -1,11 +1,8 @@
 package hw5.Tester;
-/*В методе main другого класса (любого), лежащего в том же пакете что и Tester, создать объект класса Tester,
-        используя любой из перегруженных конструкторов. продемонстрировать последовательный вызов всех методов класса Tester,
-        если это возможно. если невозможно – закомментировать и написать почему.*/
+
 public class Main {
     public static void main(String[] args) {
         Tester tester = new Tester("Иван", "Иванов", 3, "В1", 500.5);
-
         /*метод salaryIncrease() не может вывестись в классе Main, тк имеет модикатор доступа private
         с ним можно работать только в классе Tester*/
         System.out.println(tester.experienceInMonths());// по умолчанию (класс, пакет )
@@ -26,7 +23,5 @@ public class Main {
 
         System.out.println(tester.getSalary());//private
         System.out.println(tester.setSalary(750.5));//private
-
-
     }
 }
