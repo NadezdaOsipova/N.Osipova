@@ -39,17 +39,17 @@ public class Tester {
     }
 
     //Написать метод с уровнем доступа только внутри класса, который будет возвращать salary*2;
-    private double salaryIncrease(double salary) {
+    private double salaryIncrease() {
         return salary * 2;
     }
 
     //Написать метод с уровнем доступа только внутри пакета, который будет возвращать количество опыта в месяцах;
-    protected int experienceInMonths(int experienceInYears) {
-        return experienceInYears * 12;
+    int experienceInMonths() {
+        return 3 * 12;
     }
 
     //Написать метод с уровнем доступа внутри пакета и для наследников в других пакетах, который выводит на экран имя и фамилию;
-    protected void fullName(String name, String surname) {
+    protected void fullName() {
         System.out.println(name + " " + surname);
     }
 
@@ -59,44 +59,49 @@ public class Tester {
     }
 
     //  Написать для каждого поля get- и set- методы с уровнем доступа только внутри пакета.
-    protected String getName() {
+    String getName() {
         return name;
     }
 
-    protected void setName(String name) {
+    String setName(String name) {
         this.name = name;
+        return name;
     }
 
-    protected String getSurname() {
+    String getSurname() {
         return surname;
     }
 
-    protected void setSurname(String surname) {
+    String setSurname(String surname) {
         this.surname = surname;
+        return surname;
     }
 
-    protected int getExperienceInYears() {
+    int getExperienceInYears() {
         return experienceInYears;
     }
 
-    protected void setExperienceInYears(int experienceInYears) {
+    int setExperienceInYears(int experienceInYears) {
         this.experienceInYears = experienceInYears;
+        return experienceInYears;
     }
 
-    protected String getEnglishLevel() {
+    String getEnglishLevel() {
         return englishLevel;
     }
 
-    protected void setEnglishLevel(String englishLevel) {
+    String setEnglishLevel(String englishLevel) {
         this.englishLevel = englishLevel;
+        return englishLevel;
     }
 
-    protected double getSalary() {
+    double getSalary() {
         return salary;
     }
 
-    protected void setSalary(double salary) {
+    double setSalary(double salary) {
         this.salary = salary;
+        return salary;
     }
 
     @Override
@@ -108,5 +113,8 @@ public class Tester {
                 ", englishLevel='" + englishLevel + '\'' +
                 ", salary=" + salary +
                 '}';
+    }
+
+    public void salary(int i) {
     }
 }

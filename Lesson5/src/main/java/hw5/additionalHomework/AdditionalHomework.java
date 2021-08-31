@@ -6,4 +6,17 @@ package hw5.additionalHomework;
 3.	Объяснить, как работают оба способа.
 */
 public class AdditionalHomework {
+    public String name;
+    public String surname;
+    public int experienceInYears;
+    public  String englishLevel;
+    public double salary;
+
+    private AdditionalHomework(String name, String surname, int experienceInYears, String englishLevel, double salary) {
+        this.name = name;
+        this.surname = surname;
+        this.experienceInYears = experienceInYears;
+        this.englishLevel = englishLevel;
+        this.salary = salary;
+    }
 }
