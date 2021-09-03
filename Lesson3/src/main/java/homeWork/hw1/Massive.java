@@ -1,4 +1,4 @@
-package homeWork;
+package homeWork.hw1;
 
 public class Massive {
     /*который принимает в качестве аргументов массив и печатает его в консоли в одну строку,
