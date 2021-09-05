@@ -1,7 +1,7 @@
 package hw5.StarSystem;
 
 public class Mars extends Planet {
-    private String name;
+    public String name;
 
     public Mars(int number) {
         super(number);

@@ -1,7 +1,7 @@
 package hw5.StarSystem;
 
 public abstract class Star extends StarSystem {
-    private String name;
+    public String name;
 
     public Star(int number) {
         super(number);

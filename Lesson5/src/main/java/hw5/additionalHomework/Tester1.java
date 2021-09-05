@@ -5,18 +5,25 @@ package hw5.additionalHomework;
 2.	Найти способ вызывать методы класса Tester, который позволит обойти ограничение, наложенное конструктором выше.
 3.	Объяснить, как работают оба способа.
 */
-public class AdditionalHomework {
-    public String name;
-    public String surname;
-    public int experienceInYears;
-    public  String englishLevel;
-    public double salary;
+public class Tester1 {
+    private String name;
+    private String surname;
 
-    private AdditionalHomework(String name, String surname, int experienceInYears, String englishLevel, double salary) {
+    private Tester1(String name, String surname) {
         this.name = name;
         this.surname = surname;
-        this.experienceInYears = experienceInYears;
-        this.englishLevel = englishLevel;
-        this.salary = salary;
+    }
+
+    public static Tester1 getInstance(String name, String surname) {//статический метод, который используется для создания объектов.
+        //Возращает объекты приватного класса Tester1
+        return new Tester1(name, surname);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }

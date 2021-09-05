@@ -11,12 +11,15 @@ import lombok.AllArgsConstructor;
 
 Каждый из классов должен содержать хотя бы одно поле и один метод (отличающихся! от родительского) на ваш выбор.
 */
-@AllArgsConstructor
-public abstract class StarSystem { //родительский класс
-    private int number;
 
-    static int starLeftOrbit(int number) {
-        return number - 1;
+public abstract class StarSystem { //родительский класс
+    public int number;
+
+    public StarSystem(int number) {
+        this.number = number;
     }
 
+    public static int starLeftOrbit(int number) {
+        return number - 1;
+    }
 }
