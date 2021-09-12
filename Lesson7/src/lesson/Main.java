@@ -1,9 +1,11 @@
+package lesson;
+
 public class Main {
     public static void main(String[] args) {
-        // Shape shape = new Shape();
-        // Circle circle = new Circle();
-        // Square square = new Square();
-        // Triangle triangle = new Triangle();
+        // lesson.Shape shape = new lesson.Shape();
+        // lesson.Circle circle = new lesson.Circle();
+        // lesson.Square square = new lesson.Square();
+        // lesson.Triangle triangle = new lesson.Triangle();
 //
         // shape.draw();
         // shape.erase();
