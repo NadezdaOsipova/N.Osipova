@@ -18,6 +18,8 @@
     <modules>
         <module>Lesson1</module>
         <module>Lesson2</module>
+        <module>Lesson8.1</module>
+
 
     </modules>
 
@@ -29,6 +31,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
 
     <build>
         <defaultGoal>clean install</defaultGoal>
