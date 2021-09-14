@@ -8,13 +8,8 @@ import lombok.Setter;
 public abstract class Predators extends Animal {
     private String habitat; // среда обитания
 
-    public Predators(String name, String color, double height, double weight, String habitat) {
-        super(name, color, height, weight);
+    public Predators(String name, String color, double height, double weight, String eat, String habitat) {
+        super(name, color, height, weight, "Meat");
         this.habitat = habitat;
-    }
-
-    @Override
-    public void feedAnimal() {
-
     }
 }

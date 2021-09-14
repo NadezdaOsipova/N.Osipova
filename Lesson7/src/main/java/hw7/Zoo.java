@@ -9,11 +9,18 @@ package hw7;
  оно должен недовольно поругаться в консоль. В Main классе/методе создать зоопарк, и покормить животных подходящей/неподходящей пищей.*/
 
 
-public abstract class Zoo {
-    Animal ani
+public class Zoo {
+    Crow crow = new Crow("Ворона ", "серый", 0.15, 2.5, 2, "Corn", "Pоссия");
+    Parrot parrot = new Parrot("Папугай", "оранжевый", 0.75, 7.5, 2, "Corn", "Бразилия");
+    Shark shark = new Shark("Акула", "серый", 50.5, 2000, "Meat", "Океан");
+    Wolf wolf = new Wolf("Волк", "серый", 1.5, 15, "Meat", "Лес");
+    ;
+    String[] arrayAnimal = {String.valueOf(crow), String.valueOf(parrot), String.valueOf(shark), String.valueOf(wolf)};
 
+    public Zoo(Zoo arrayAnimal) {
+    }
 
-    public int totalNumberOfAnimals() {
+    public int totalNumberOfAnimals(String[] arrayAnimal) {
         return 0; //запилить метод возращающий  сумму животных в зоопарке
     }
 

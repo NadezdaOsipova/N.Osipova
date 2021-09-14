@@ -8,8 +8,8 @@ import lombok.Setter;
 public class Crow extends Bird { //ворона
     private String country;
 
-    public Crow(String name, String color, double height, double weight, int wings, String country) {
-        super(name, color, height, weight, wings);
+    public Crow(String name, String color, double height, double weight, int wings, String eat, String country) {
+        super(name, color, height, weight, wings, "Corn");
         this.country = country;
     }
 }
