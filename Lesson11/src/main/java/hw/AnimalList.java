@@ -1,7 +1,5 @@
 package hw;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,11 +7,11 @@ public class AnimalList {
 
     List<String> animalList = new LinkedList<>();
 
-    public void addAnimal() {
-
+    public void addAnimal(String str) {
+        animalList.add(animalList.size(), str);
     }
 
     public void removeAnimal() {
-
+        animalList.remove(0);
     }
 }

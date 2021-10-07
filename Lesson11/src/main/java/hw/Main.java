@@ -1,16 +1,18 @@
 package hw;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> animalList = new ArrayList<>();
-        animalList.add("Elephant");
-        Collections.addAll(animalList, "Wolf", "Tiger");
+        AnimalList animalList = new AnimalList();
+        animalList.addAnimal("Wolf");
+        animalList.addAnimal("Tiger");
+        animalList.addAnimal("Monkey");
+        animalList.addAnimal("Elephant");
+        animalList.addAnimal("Leon");
         System.out.println(animalList);
-
+        animalList.removeAnimal();
+        animalList.removeAnimal();
+        System.out.println(animalList.toString());
     }
-
 }
