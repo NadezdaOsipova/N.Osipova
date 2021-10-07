@@ -12,7 +12,6 @@ public class DeterminationOfTheZodiacSign {
             double number = scanner.nextDouble();
             Zodiac zodiac = new Zodiac();
             zodiac.birthdayNumber(number);
-
         } catch (InputMismatchException inputMismatchException) {
             System.out.println("Введено некорректное число!");
         }
