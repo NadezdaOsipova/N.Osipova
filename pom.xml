@@ -18,6 +18,7 @@
     <modules>
         <module>Lesson1</module>
         <module>Lesson2</module>
+        <module>Lesson12</module>
 
     </modules>
 
@@ -32,6 +33,17 @@
 
     <build>
         <defaultGoal>clean install</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
 
 </project>
