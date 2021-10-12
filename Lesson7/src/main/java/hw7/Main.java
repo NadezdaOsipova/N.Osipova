@@ -19,8 +19,12 @@ public class Main {
                 + "1 - Meat\n"
                 + "2 - Corn\n"
         );
-        String eat1 = scanner.nextLine();
-        zoo.wolf.feedAnimal(eat1);
+        String eat = scanner.nextLine();
+        zoo.wolf.feedAnimal(eat);
         zoo.wolf.feedAnimal("Meat");
+
+        zoo.crow.feedAnimal(eat);
+        zoo.crow.feedAnimal("Corn");
+        zoo.crow.feedAnimal("Meat");
     }
 }

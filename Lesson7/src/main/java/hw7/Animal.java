@@ -22,12 +22,15 @@ public abstract class Animal {
 
     public void feedAnimal(String eat) {
         switch (eat) {
-            case "Meat" -> System.out.println("I like meat!");
-            case "Corn" -> System.out.println("I like corn!");
-            default -> System.out.println("I don't like your food!");
+            case "Meat":
+                System.out.println("I like meat!");
+                break;
+            case "Corn":
+                System.out.println("I like corn!");
+                break;
+            default:
+                System.out.println("I don't like your food!");
         }
     }
-
-
 }
 

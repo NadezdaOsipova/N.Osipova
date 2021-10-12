@@ -14,7 +14,6 @@ public class Zoo {
     Parrot parrot = new Parrot("Папугай", "оранжевый", 0.75, 7.5, 2, "Corn", "Бразилия");
     Shark shark = new Shark("Акула", "серый", 50.5, 2000, "Meat", "Океан");
     Wolf wolf = new Wolf("Волк", "серый", 1.5, 15, "Meat", "Лес");
-    ;
     String[] arrayAnimal = {String.valueOf(crow), String.valueOf(parrot), String.valueOf(shark), String.valueOf(wolf)};
 
     public Zoo(Zoo arrayAnimal) {
