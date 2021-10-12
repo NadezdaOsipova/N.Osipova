@@ -1,6 +1,4 @@
-package hw;
-
-import java.util.*;
+package hw.hw1;
 
 public class Main {
     public static void main(String[] args) {
