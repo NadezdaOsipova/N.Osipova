@@ -9,8 +9,8 @@ public class Main {
         list.addAnimal(new Monkey());
         list.addAnimal(new Elephant());
         list.addAnimal(new Wolf());
+        System.out.println(list.toString());
 
-        System.out.println(list);
         list.removeAnimal();
         list.removeAnimal();
         System.out.println(list.toString());
