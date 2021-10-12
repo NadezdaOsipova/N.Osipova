@@ -5,10 +5,10 @@ import java.util.List;
 
 public class AnimalList {
 
-    List<String> animalList = new LinkedList<>();
+    List<Animal> animalList = new LinkedList<>();
 
-    public void addAnimal(String str) {
-        animalList.add(animalList.size(), str);
+    public void addAnimal(Animal animal) {
+        animalList.add(animalList.size(), animal);
     }
 
     public void removeAnimal() {

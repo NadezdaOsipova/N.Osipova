@@ -1,10 +1,11 @@
 package hw.hw2;
 
 public class Main {
+
     public static void main(String[] args) {
-        AnimalList<Animal> list = new AnimalList();
+        AnimalList list = new AnimalList();
         //   AnimalList animalList = new AnimalList();
-        animalList.addAnimal("Wolf");
+        list.addAnimal(Monkey);
         animalList.addAnimal("Tiger");
         animalList.addAnimal("Monkey");
         animalList.addAnimal("Elephant");
