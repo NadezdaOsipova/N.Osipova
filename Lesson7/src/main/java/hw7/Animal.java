@@ -21,6 +21,7 @@ public abstract class Animal {
     }
 
     public void feedAnimal(String eat) {
+
         switch (eat) {
             case "Meat":
                 System.out.println("I like meat!");
